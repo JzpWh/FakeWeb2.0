@@ -1,0 +1,20 @@
+
+
+
+
+  
+  /* relevant for the tutorial - start */
+
+    #pictures1 { position: relative; height: 300px; width:300px; }
+    #pictures1 img { position: absolute; top: 0; left: 0; height: 300px;}
+     #pictures2 { position: relative; height: 300px; width:300px; }
+    #pictures2 img { position: absolute; top: 0; left: 0; height: 300px;}
+    #prev1, #next1, #prev2, #next2 { 
+	   margin-top: 30px;
+	   margin-left:30px;
+	   color:#FFF; 
+	
+	 }
+ 
+
+ 

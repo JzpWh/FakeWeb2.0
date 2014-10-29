@@ -1,0 +1,20 @@
+#MyEclipse Hibernate Properties
+#Thu Oct 23 17:37:54 CST 2014
+genBasicCompId=true
+sessionFactoryName=com.blackswan.fake.Hibernate.HibernateSessionFactory
+profile=
+daoSFId=
+jndiPath=
+detectM2M=true
+reStrategyClass=
+detectO2O=true
+springDaoFile=
+useJavaTypes=true
+keyGenerator=identity
+genVersionTag=false
+sessionFactoryId=
+basePersistenceClass=
+genAnnotations=true
+reSettingsFile=/FaKeWeb1.5/src/hibernate.reveng.xml
+configFile=/FaKeWeb1.5/src/hibernate.cfg.xml
+createConfigFile=true
