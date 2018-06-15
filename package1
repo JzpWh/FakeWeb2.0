@@ -1,0 +1,36 @@
+#!/bin/bash
+
+if [ $# -eq 0 ]; then
+	exit 1
+fi
+
+
+
+if [ $# -eq 1 ]; then
+	nl $1
+	exit 1
+fi
+
+row=$2
+
+ip=`awk  'NR=='${row}'{print$1}' $1`
+rootpasswd=`awk  'NR=='${row}'{print$2}' $1`
+subuser=`awk  'NR=='${row}'{print$3}' $1`
+subuserpasswd=`awk  'NR=='${row}'{print$4}' $1`
+
+
+if [ $# -eq 3 ]; then
+	user=root
+	passwd=${rootpasswd}
+else
+    user=${subuser}
+	passwd=${subuserpasswd}
+fi
+
+echo ${ip} ${user} ${passwd}
+
+cmd='sshpass -p "'${passwd}'" ssh '${user}'@'${ip}''
+echo ${cmd}
+
+
+eval $cmd
